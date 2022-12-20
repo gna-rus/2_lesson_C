@@ -1,0 +1,14 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Введите число");
+    string str1 = Console.ReadLine();
+
+    if(str1.Length < 3) {Console.WriteLine("Третей цифры нет в числе");}
+    else 
+    {
+        Console.WriteLine($"{str1} -> {str1[2]}");  
+    }
+    
+  }
+}
