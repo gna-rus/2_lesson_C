@@ -1,17 +1,22 @@
 using System;
 class HelloWorld {
   static void Main() {
+    // Задача 15: Напишите программу, которая принимает на вход цифру, 
+    // обозначающую день недели, и проверяет, является ли этот день выходным.
+    
     Console.WriteLine("Введите число от 1 до 7");
-    while (true)
+    while (true) // Цикл, ожидающий ввод корректного числа
     {
-        string str1 = Console.ReadLine();
+        string str1 = Console.ReadLine(); // ввод числа
         int val1 = int.Parse(str1);
+        // Проверка на корректность
         if ((val1< 1) || (val1 > 7)) {Console.WriteLine("Введено не корректное число");}
         else 
-        {
+        {   
+            // Вывод ответа
             if ((val1 == 6) || (val1 == 7)) {Console.WriteLine("да"); break;}
             else {Console.WriteLine("нет"); break;}
         }
-        }
+    }
   }
 }

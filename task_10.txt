@@ -1,18 +1,19 @@
 using System;
 class HelloWorld {
   static void Main() {
-//
-    Console.WriteLine("Введите число");
+    // Задача 10: Напишите программу, которая принимает на вход трёхзначное число 
+    // и на выходе показывает вторую цифру этого числа.
+    
+    // Ввод числа и парсинг
+    Console.WriteLine("Введите трехзначное число");
     string str1 = Console.ReadLine();
     int val1 = int.Parse(str1);
     
     // 1 решение
-    
    val1 = (val1/10)%10;
    Console.WriteLine($"Решение через деление: {str1} -> {val1}");
     
     // 2 решение
-    
     Console.WriteLine($"Решение через индексацию: {str1} -> {str1[1]}");
   }
 }

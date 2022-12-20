@@ -1,14 +1,17 @@
 using System;
 class HelloWorld {
   static void Main() {
+    // Задача 13: Напишите программу, которая выводит третью цифру заданного числа 
+    // или сообщает, что третьей цифры нет.
+    
     Console.WriteLine("Введите число");
     string str1 = Console.ReadLine();
-
+    // Проверка на длину числа
     if(str1.Length < 3) {Console.WriteLine("Третей цифры нет в числе");}
     else 
-    {
+    {   
+    // Вывод ответа 
         Console.WriteLine($"{str1} -> {str1[2]}");  
     }
-    
   }
 }
